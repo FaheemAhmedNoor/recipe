@@ -1,0 +1,65 @@
+$navbar-default-bg: #cd903b;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo {
+  margin-top: 10px;
+  float: left;
+  font-size: 2em;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+#logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_item {
+  margin-left: 25px;
+  float: left;
+  margin-top: 7px;
+}
+
+.center {
+  margin-top: 100px;
+  text-align: center;
+}
+
+h1 h2 {
+  line-height: 1px;
+}
+
+.dull-color {
+  color: #777;
+}
+
+.signup-btn {
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+.jumbotron {
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  color: #462303 !important;
+  background-color: rgb(232, 198, 139) !important;
+  border-radius: 4px;
+}
