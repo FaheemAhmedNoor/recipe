@@ -1,0 +1,24 @@
+
+<%= render partial: "layouts/page_title", locals: {title: "Recipes List"}%>
+
+<div>
+  <%= link_to  "Create New Recipee", new_recipee_path, class:"index-btn btn btn-success new-recipee-btn" %>
+</div>
+
+<% @recipees.each do |recipe| %>
+    <div class="col-4">
+      <section class="chef-info">
+        </section>
+    </div>
+
+    <div class="col-8 well individual-recipee">
+      <h4> <%= link_to recipe.name, recipee_path(recipe)%> </h4>
+      <p> <%= recipe.summary %> </p>
+      <p>
+        <span class="quite"> <small> <%= time_ago_in_words(recipe.created_at) %> ago </small> </span>
+      </p>
+    </div>
+<%end%>
+ <%= render partial:"layouts/footer" %>
+
+

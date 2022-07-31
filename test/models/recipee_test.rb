@@ -3,11 +3,17 @@ require "test_helper"
 class RecipeeTest < ActiveSupport::TestCase
 
   def setup
-    @recipee = Recipee.new(name: "Noodles Recipee", summary:"Spicy Noodles recipee is here", description:"First take one cup water put it on flame and add the noodle packet in it, now add the spices in your noodles and let it on fire for about 10 minutes, The spicy noodles is ready")
+    @chef = Chef.new(chefname: "Mubashir", email: "mubashir@gmail.com")
+    @recipee = @chef.recipees.build(name: "Noodles Recipee", summary:"Spicy Noodles recipee is here", description:"First take one cup water put it on flame and add the noodle packet in it, now add the spices in your noodles and let it on fire for about 10 minutes, The spicy noodles is ready")
+  end
+
+  test "chef_id should be present" do
+    @recipee.chef_id = nil
+    assert_not @recipee.valid?
   end
 
   test "recipee should be valid" do
-    assert @recipee.valid?
+    assert_not @recipee.valid?
   end
 
 

@@ -11,12 +11,16 @@
   </head>
 
   <body>
-    <%= render partial: "layouts/navbar"%>
-    <div class="container">
-      <%= yield %>
-      <%= render partial:"layouts/footer"%>
+    <div class= "container message-box">
+      <%= render partial: "layouts/messages", class:"message" %>
     </div>
 
+    <div class="container">
+      <%= render partial: "layouts/navbar"%>
+    </div>
 
+    <div class="container cont1">
+      <%= yield %>
+    </div>
   </body>
 </html>

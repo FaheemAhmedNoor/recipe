@@ -1,0 +1,17 @@
+<%= render partial: "layouts/page_title", locals: {title: @recipee.name}%>
+
+<div>
+  <%= link_to  "Edit Recipee", edit_recipee_path, class: "btn btn-success edit-recipee-btn" %>
+</div>
+
+<h3>summary:</h3>
+<div class="well">
+  <%= @recipee.summary %>
+</div>
+
+<h3>description:</h3>
+<div class="well">
+  <%= simple_format(@recipee.description) %>
+</div>
+
+

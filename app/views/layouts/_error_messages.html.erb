@@ -1,0 +1,8 @@
+<div class= "row">
+  <div class = "alert alert-danger col-md-8 col-md-offset-2">
+    <h5>Please correct the following error messages</h5>
+    <% @recipee.errors.full_messages.each do |msg|%>
+    <li> <%= msg %> </li>
+    <%end%>
+  </div>
+</div>

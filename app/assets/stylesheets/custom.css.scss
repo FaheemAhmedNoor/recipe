@@ -3,28 +3,23 @@ $navbar-default-bg: #cd903b;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#logo {
-  margin-top: 10px;
-  float: left;
-  font-size: 2em;
-  color: #fff;
-  text-transform: capitalize;
-  letter-spacing: -1px;
-  font-weight: bold;
-  padding: 10px;
-  margin-bottom: 8px;
-  margin-top: 10px;
-}
+// #logo {
+//   float: left;
+//   font-size: 2em;
+//   color: #fff;
+//   text-transform: capitalize;
+//   letter-spacing: -1px;
+//   font-weight: bold;
+//   padding: 10px;
+//   margin-bottom: 8px;
+//   margin-top: 10px;
+// }
 
-#logo:hover {
-  color: white;
-  text-decoration: none;
+* {
+  font-family: IMontserrat, Avant Garde, Arial, sans-serif !important;
 }
-
-.nav_item {
-  margin-left: 25px;
-  float: left;
-  margin-top: 7px;
+.main-link {
+  font-size: 30px;
 }
 
 .center {
@@ -61,5 +56,87 @@ h1 h2 {
 .navbar-brand:hover {
   color: #462303 !important;
   background-color: rgb(232, 198, 139) !important;
-  border-radius: 4px;
+  border-radius: 1px;
+  padding: -5px !important;
+}
+
+.cont1 {
+  margin-top: 55px;
+}
+
+.recipe-list {
+  text-align: center;
+  margin-top: -5px;
+}
+
+.show-heading {
+  text-align: center;
+}
+
+.new-h1 {
+  text-align: center;
+}
+
+.well {
+  background-color: #ededed;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  width: 62%;
+  margin-bottom: 15px;
+}
+
+.new-recipee-btn {
+  background-color: #cd903b;
+  margin-left: 985px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.individual-recipee:hover {
+  color: #462303 !important;
+  background-color: rgb(232, 198, 139) !important;
+  border-radius: 1px;
+  padding: -5px !important;
+}
+
+.new-recipee-btn:hover {
+  color: #462303 !important;
+  background-color: rgb(232, 198, 139) !important;
+  border-radius: 1px;
+  padding: -5px !important;
+}
+
+.index-btn {
+  color: white;
+}
+
+.index-btn:hover {
+  color: #462303 !important;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.message-box {
+  margin-top: 60px;
+}
+
+.edit-recipee-btn {
+  background-color: #cd903b;
+  margin-left: 1036px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.edit-recipee-btn:hover {
+  color: #462303 !important;
+  background-color: rgb(232, 198, 139) !important;
+  border-radius: 10px;
+  padding: -5px !important;
 }

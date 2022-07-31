@@ -1,0 +1,7 @@
+<%= render partial: "layouts/page_title", locals: {title: "Create a new Recipee"}%>
+
+<% if @recipee.errors.any? %>
+  <%= render partial: "layouts/error_messages"%>
+<%end%>
+
+<%= render partial: "form"%>
